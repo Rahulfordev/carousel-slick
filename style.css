@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #e3f2fd;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1000px;
+  display: flex;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.testi-content {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.slide {
+  text-align: center;
+}
+
+.slide img {
+  max-width: 100px;
+  height: 100px;
+  margin-inline: auto;
+}
+
+.slide p {
+  max-width: 47rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.quote-icon {
+  color: #4070f4;
+  font-size: 2rem;
+}
+
+.details {
+  padding: 1rem 0;
+}
+
+.slick-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  margin-top: 20px;
+}
+
+.slick-arrow.slick-next {
+  left: auto;
+  right: -2rem;
+}
+
+.slick-arrow i {
+  font-size: 22px;
+}
+
+.slick-dots {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slick-dots {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.slick-dots li button {
+  text-indent: -9999px;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.slick-dots .slick-active button {
+  background-color: #4070f4;
+}
+
+@media screen and (max-width: 650px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .slick-arrow {
+    display: none !important;
+  }
+}
